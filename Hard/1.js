@@ -11,9 +11,13 @@
 
 */
 
-const validTriangle = () => {
-    /* Тут код*/
+const validTriangle = (a, b, c) => {
+    if (a < b + c && b < a + c && c < a + b) {
+        return true
+    } else return false
 
 }
+
+console.log(validTriangle(3, 4, 5))
 
 module.exports = validTriangle

@@ -7,9 +7,11 @@
 */
 
 const randomArr = () => {
-    /* Тут код*/
+    return Array.from({ length: 10 }, () => Math.floor(Math.random() * 10));
 
 }
+
+console.log(randomArr())
 
 
 module.exports = randomArr

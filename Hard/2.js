@@ -11,9 +11,18 @@
 
 */
 
-const longestString = () => {
-    /* Тут код*/
+const longestString = (arr) => {
+    if (arr == "") {
+        return null
+    } else {
+        return arr.reduce(function (a, b) {
+            return a.length > b.length ? a : b
+        })
+
+    }
 
 }
+
+console.log(longestString(['one', 'two', 'three']))
 
 module.exports = longestString

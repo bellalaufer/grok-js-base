@@ -9,8 +9,12 @@
 */
 
 const nestedArr = (arr, number) => {
-    /* Тут код*/
+    let myIndex = arr.findIndex((elem) => elem.includes(number));
+
+    return (myIndex === -1 ? undefined : myIndex);
 
 }
+
+console.log(nestedArr([[1], [2, 3], [4]], 4))
 
 module.exports = nestedArr
